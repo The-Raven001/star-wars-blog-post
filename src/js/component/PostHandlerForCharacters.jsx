@@ -74,7 +74,9 @@ export const PostHandlerForCharacters = () => {
                   <strong>Films</strong>
                 </h2>
                 <ul className="fs-5">
-                  <li>La peli</li>
+                  {character.films.map((film) => (
+                    <li>{film}</li>
+                  ))}
                 </ul>
               </div>
               <div className="ms-5 mt-2"></div>
